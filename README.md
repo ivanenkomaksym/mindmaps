@@ -91,7 +91,6 @@ Note that if blocks and lists appear at the same level, the lists will be ignore
 - **strong** ~~del~~ *italic* ==highlight==
 - `inline code`
 - [x] checkbox
-- Katex: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$ <!-- markmap: fold -->
   - [More Katex Examples](#?d=gist:af76a4c245b302206b16aec503dbe07b:katex.md)
 - Now we can wrap very very very very long text based on `maxWidth` option
 - Ordered list
