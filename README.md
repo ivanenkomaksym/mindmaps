@@ -22,11 +22,65 @@ markmap:
 - Amazon EKS
 - AWS Fargate
 
-## Related Projects
+## Global Infrastructure
 
-- [coc-markmap](https://github.com/gera2ld/coc-markmap) for Neovim
-- [markmap-vscode](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode) for VSCode
-- [eaf-markmap](https://github.com/emacs-eaf/eaf-markmap) for Emacs
+- Factors
+  - Compliance
+  - Proximity
+  - Feature availability
+  - Pricing
+- Edge locations
+- AWS Outposts
+- AWS Elastic Beanstalk
+- AWS CloudFormation
+
+## Networking
+
+- VPC - Virtual Private Cloud
+  - Internet gateway, or IGW
+  - Virtual private gateway
+  - Direct Connect
+  - Public/Private subnets
+  - Network access control list (ACL)(opens in a new tab). Stateless. Allows all inbound and outbound traffic
+  - Security groups. Stateful. Denies all inbound traffic and allows all outbound traffic
+- Route 53
+
+## Storage and Databases
+
+- Storage
+  - Instance stores. if you stop or terminate your EC2 instance, all data written to the instance store volume will be deleted
+  - Amazon Elastic Block Store (Amazon EBS)
+  - Amazon Simple Storage Service (Amazon S3)
+    - S3 Standard
+    - S3 Standard-Infrequent Access (S3 Standard-IA)
+    - S3 One Zone-Infrequent Access (S3 One Zone-IA)
+    - S3 Intelligent-Tiering
+    - S3 Glacier Instant Retrieval
+    - S3 Glacier Flexible Retrieval
+    - S3 Glacier Deep Archive
+    - S3 Outposts
+  - Amazon Elastic File System (Amazon EFS)
+- Database
+  - Amazon Relational Database Service (Amazon RDS)
+  - Amazon Aurora
+  - Amazon DynamoDB
+  - Amazon Redshift
+  - AWS Database Migration Service (AWS DMS)
+  - Amazon DocumentDB
+  - Amazon Neptune
+  - Amazon Quantum Ledger Database (Amazon QLDB)
+  - Amazon Managed Blockchain
+  - Amazon ElastiCache
+  - Amazon DynamoDB Accelerator
+
+- VPC - Virtual Private Cloud
+  - Internet gateway, or IGW
+  - Virtual private gateway
+  - Direct Connect
+  - Public/Private subnets
+  - Network access control list (ACL)(opens in a new tab). Stateless. Allows all inbound and outbound traffic
+  - Security groups. Stateful. Denies all inbound traffic and allows all outbound traffic
+- Route 53
 
 ## Features
 
