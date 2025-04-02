@@ -1,111 +1,48 @@
----
-title: AWS
-markmap:
-  colorFreezeLevel: 2
----
+# Mindmap Visualizer with Markmap
 
-## Compute in the Cloud
+This repository provides an automated pipeline for visualizing Markdown-based mindmaps written in Markdown using Markmap on every commit. It converts `.md` files in the `maps/` directory into interactive **Markmap** diagrams and deploys them to **Cloudflare Pages** for easy sharing and access.
 
-- Amazon Elastic Compute Cloud (Amazon EC2)
-  - General purpose
-  - Compute optimized
-  - Memory optimized
-  - Accelerated computing
-  - storage optimized
-- Amazon EC2 pricing
-  - On-Demand Instances
-  - Reserved Instances
-  - EC2 Instance Savings Plans
-  - Spot Instances
-- AWS Lambda
-- Amazon Elastic Container Service (Amazon ECS)
-- Amazon EKS
-- AWS Fargate
+🔗 https://mindmaps.ivanenkomak.com
 
-## Global Infrastructure
+## 🔧 Features
 
-- Factors
-  - Compliance
-  - Proximity
-  - Feature availability
-  - Pricing
-- Edge locations
-- AWS Outposts
-- AWS Elastic Beanstalk
-- AWS CloudFormation
+- ✅ Automated Markdown to Markmap conversion – Uses GitHub Actions to generate .html files from Markdown mindmaps.
+- ✅ Dynamic Index Page – Generates index.html with links to all visualized mindmaps.
+- ✅ Cloudflare Pages Deployment – Publishes all generated mindmaps as a static website.
+- ✅ Lightweight & Fast – No server required; everything runs in a static environment.
 
-## Networking
+## 📂 Folder Structure
 
-- VPC - Virtual Private Cloud
-  - Internet gateway, or IGW
-  - Virtual private gateway
-  - Direct Connect
-  - Public/Private subnets
-  - Network access control list (ACL)(opens in a new tab). Stateless. Allows all inbound and outbound traffic
-  - Security groups. Stateful. Denies all inbound traffic and allows all outbound traffic
-- Route 53
+```
+/maps              # Raw Markdown mindmaps  
+  ├── azure.md  
+  ├── aws.md  
+  ├── gcp.md  
 
-## Storage and Databases
-
-- Storage
-  - Instance stores. if you stop or terminate your EC2 instance, all data written to the instance store volume will be deleted
-  - Amazon Elastic Block Store (Amazon EBS)
-  - Amazon Simple Storage Service (Amazon S3)
-    - S3 Standard
-    - S3 Standard-Infrequent Access (S3 Standard-IA)
-    - S3 One Zone-Infrequent Access (S3 One Zone-IA)
-    - S3 Intelligent-Tiering
-    - S3 Glacier Instant Retrieval
-    - S3 Glacier Flexible Retrieval
-    - S3 Glacier Deep Archive
-    - S3 Outposts
-  - Amazon Elastic File System (Amazon EFS)
-- Database
-  - Amazon Relational Database Service (Amazon RDS)
-  - Amazon Aurora
-  - Amazon DynamoDB
-  - Amazon Redshift
-  - AWS Database Migration Service (AWS DMS)
-  - Amazon DocumentDB
-  - Amazon Neptune
-  - Amazon Quantum Ledger Database (Amazon QLDB)
-  - Amazon Managed Blockchain
-  - Amazon ElastiCache
-  - Amazon DynamoDB Accelerator
-
-- VPC - Virtual Private Cloud
-  - Internet gateway, or IGW
-  - Virtual private gateway
-  - Direct Connect
-  - Public/Private subnets
-  - Network access control list (ACL)(opens in a new tab). Stateless. Allows all inbound and outbound traffic
-  - Security groups. Stateful. Denies all inbound traffic and allows all outbound traffic
-- Route 53
-
-## Features
-
-Note that if blocks and lists appear at the same level, the lists will be ignored.
-
-### Lists
-
-- **strong** ~~del~~ *italic* ==highlight==
-- `inline code`
-- [x] checkbox
-  - [More Katex Examples](#?d=gist:af76a4c245b302206b16aec503dbe07b:katex.md)
-- Now we can wrap very very very very long text based on `maxWidth` option
-- Ordered list
-  1. item 1
-  2. item 2
-
-### Blocks
-
-```js
-console.log('hello, JavaScript')
+/public            # Auto-generated static files  
+  ├── maps/        # Contains generated Markmap visualizations  
+  │   ├── azure.html  
+  │   ├── aws.html  
+  │   ├── gcp.html  
+  ├── index.html   # Landing page with links to all mindmaps  
 ```
 
-| Products | Price |
-|-|-|
-| Apple | 4 |
-| Banana | 2 |
+## 🚀 How It Works
 
-![](https://markmap.js.org/favicon.png)
+1. Add a new Markdown mindmap to the maps/ folder.
+2. Push to GitHub – The workflow automatically:
+   - Converts .md files to Markmap HTML
+   - Updates public/index.html with new links
+   - Deploys to Cloudflare Pages
+   - Access your mindmaps online via the Cloudflare Pages URL.
+
+## 🛠️ Local Development
+
+You can manually generate and preview Markmaps using:
+
+```bash
+npm install -g markmap-cli
+markmap maps/example.md -o public/maps/example.html
+```
+
+Then open `public/maps/example.html` in your browser.
