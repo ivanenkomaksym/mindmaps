@@ -72,6 +72,27 @@ markmap:
   - Amazon Managed Blockchain
   - Amazon ElastiCache
   - Amazon DynamoDB Accelerator
+- Security
+  - Shared Responsibility Model
+  - User Permissions And Access
+    - Root user
+    - Users/Groups
+    - Policies
+    - Roles
+  - AWS Organizations
+    - Service control policies (SCPs). Applied on organization root, an individual member account, or an OU
+    - Policies applied on IAM users, groups, or roles
+  - Compliance. AWS Artifact
+  - DDoS. AWS Shield Standard and AWS Shield Advanced
+  - Additional Security Services
+    - AWS Key Management Service (AWS KMS)
+    - AWS WAF
+    - Amazon Inspector
+    - Amazon GuardDuty
+- Monitoring and Analytics
+  - Amazon CloudWatch. CloudWatch alarms
+  - AWS CloudTrail. CloudTrail Insights
+  - AWS Trusted Advisor. Pillars: cost optimization, performance, security, fault tolerance, and service limits
 
 - VPC - Virtual Private Cloud
   - Internet gateway, or IGW
