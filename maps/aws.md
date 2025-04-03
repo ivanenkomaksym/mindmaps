@@ -72,7 +72,9 @@ markmap:
   - Amazon Managed Blockchain
   - Amazon ElastiCache
   - Amazon DynamoDB Accelerator
-- Security
+
+## Security
+
   - Shared Responsibility Model
   - User Permissions And Access
     - Root user
@@ -89,44 +91,78 @@ markmap:
     - AWS WAF
     - Amazon Inspector
     - Amazon GuardDuty
-- Monitoring and Analytics
+
+## Monitoring and Analytics
+
   - Amazon CloudWatch. CloudWatch alarms
   - AWS CloudTrail. CloudTrail Insights
   - AWS Trusted Advisor. Pillars: cost optimization, performance, security, fault tolerance, and service limits
 
-- VPC - Virtual Private Cloud
-  - Internet gateway, or IGW
-  - Virtual private gateway
-  - Direct Connect
-  - Public/Private subnets
-  - Network access control list (ACL)(opens in a new tab). Stateless. Allows all inbound and outbound traffic
-  - Security groups. Stateful. Denies all inbound traffic and allows all outbound traffic
-- Route 53
+## Pricing
 
-## Features
+ - AWS Free Tier
+   - Always free. AWS lambda free up to 1 million invocations per month
+   - Free for 12 months. AWS S3 for up to 5GB of storage
+   - Trials
+ - AWS Pricing Concepts
+   - AWS Pricing Calculator
+   - Compute Savings Plan
+   - Amazon S3
+     - Storage 
+     - Requests and data retrievals 
+     - Data transfer 
+     - Management and replication
+ - Billing Dashboard
+ - Consolidated Billing
+ - AWS Budgets
+ - AWS Cost Explorer
+ - AWS Support Plans
+   - Basic
+   - Developer
+   - Business
+   - Enterprise On-Ramp
+   - Enterprise
 
-Note that if blocks and lists appear at the same level, the lists will be ignored.
+## Migration and Innovation
 
-### Lists
+- AWS Cloud Adoption Framework (AWS CAF)
+  - Business
+  - People
+  - Governance
+  - Platform
+  - Security
+  - Operations
+- Migration Strategies
+  - Rehosting
+  - Replatforming
+  - Refactoring/re-architecting
+  - Repurchasing
+  - Retaining
+  - Retiring
+- AWS Snow Family
+  - AWS Snowcone
+  - AWS Snowball
+  - AWS Snowmobile
+- Innovation with AWS
+  - Amazon Textract
+  - Amazon Lex
+  - AWS DeepRacer
+  - Amazon SageMaker
+  - Amazon Q Developer
 
-- **strong** ~~del~~ *italic* ==highlight==
-- `inline code`
-- [x] checkbox
-  - [More Katex Examples](#?d=gist:af76a4c245b302206b16aec503dbe07b:katex.md)
-- Now we can wrap very very very very long text based on `maxWidth` option
-- Ordered list
-  1. item 1
-  2. item 2
-
-### Blocks
-
-```js
-console.log('hello, JavaScript')
-```
-
-| Products | Price |
-|-|-|
-| Apple | 4 |
-| Banana | 2 |
-
-![](https://markmap.js.org/favicon.png)
+## The Cloud Journey
+  
+- The AWS Well-Architected Framework
+  - Operational excellence
+  - Security
+  - Reliability
+  - Performance efficiency
+  - Cost optimization
+  - Sustainability
+- Advantages of cloud computing
+  - Trade upfront expense for variable expense.
+  - Benefit from massive economies of scale.
+  - Stop guessing capacity.
+  - Increase speed and agility.
+  - Stop spending money running and maintaining data centers.
+  Go global in minutes.
