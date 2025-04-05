@@ -11,12 +11,13 @@ markmap:
   - Compute optimized
   - Memory optimized
   - Accelerated computing
-  - storage optimized
+  - Storage optimized
 - Amazon EC2 pricing
   - On-Demand Instances
   - Reserved Instances
   - EC2 Instance Savings Plans
   - Spot Instances
+  - Dedicated Hosts
 - AWS Lambda
 - Amazon Elastic Container Service (Amazon ECS)
 - Amazon EKS
@@ -29,10 +30,12 @@ markmap:
   - Proximity
   - Feature availability
   - Pricing
+- AWS Region > Availability Zone AZ > Data center
+- Amazon CloudFront (CDN)
 - Edge locations
 - AWS Outposts
-- AWS Elastic Beanstalk
-- AWS CloudFormation
+- AWS Elastic Beanstalk (PaaS)
+- AWS CloudFormation (IaC)
 
 ## Networking
 
@@ -41,7 +44,7 @@ markmap:
   - Virtual private gateway
   - Direct Connect
   - Public/Private subnets
-  - Network access control list (ACL)(opens in a new tab). Stateless. Allows all inbound and outbound traffic
+  - Network access control list (ACL). Stateless. Allows all inbound and outbound traffic
   - Security groups. Stateful. Denies all inbound traffic and allows all outbound traffic
 - Route 53
 
@@ -85,6 +88,8 @@ markmap:
     - Service control policies (SCPs). Applied on organization root, an individual member account, or an OU
     - Policies applied on IAM users, groups, or roles
   - Compliance. AWS Artifact
+    - AWS Artifact Agreements
+    - AWS Artifact Reports
   - DDoS. AWS Shield Standard and AWS Shield Advanced
   - Additional Security Services
     - AWS Key Management Service (AWS KMS)
@@ -97,6 +102,7 @@ markmap:
   - Amazon CloudWatch. CloudWatch alarms
   - AWS CloudTrail. CloudTrail Insights
   - AWS Trusted Advisor. Pillars: cost optimization, performance, security, fault tolerance, and service limits
+  - Amazon Inspector
 
 ## Pricing
 
@@ -166,3 +172,9 @@ markmap:
   - Increase speed and agility.
   - Stop spending money running and maintaining data centers.
   Go global in minutes.
+
+## Job Roles in the Cloud
+
+- AWS Cloud for Business
+  - Speed, Scale, Innovation, Productivity
+  - Cloud Architect, System Administrator, Security Administrator, DevOps Administrator
