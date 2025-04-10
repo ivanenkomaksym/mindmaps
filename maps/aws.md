@@ -133,11 +133,26 @@ markmap:
 
 - AWS Cloud Adoption Framework (AWS CAF)
   - Business
+    - Your investments in the cloud propel your digital transformation goals and business results
   - People
+    - Link between technology and business, speeding up the cloud journey to help organizations quickly evolve into a culture of continuous growth and learning
   - Governance
+    - Helps coordinate cloud initiatives while maximizing organizational benefits and minimizing risks
   - Platform
+    - Helps construct an enterprise-grade, scalable, hybrid cloud platform, modernize existing workloads, and implement new cloud-native solutions.
   - Security
+    - Helps achieve the confidentiality, integrity, and availability of data and cloud workloads.
   - Operations
+    - Helps ensure that cloud services are delivered at a level that meets the business needs.
+- Benefits of Using AWS CAF
+  - Risk Reduction
+  - Improve environmental, social, and governance performance
+  - Revenue Growth
+  - Increased Operational Efficiency
+- Cloud Transformation Phases in AWS CAF
+  - Envision, Align, Launch, Scale
+- AWS CAF Use Cases
+  - Technology, Process, Organization, Product
 - Migration Strategies
   - Rehosting
   - Replatforming
@@ -160,11 +175,21 @@ markmap:
   
 - The AWS Well-Architected Framework
   - Operational excellence
+    - The ability to run and monitor systems to deliver business value
+    - AWS CloudFormation for creating templates
   - Security
+    - AWS Identity and Access Management (IAM)
   - Reliability
+    - Recover from infrastructure or service disruptions
+    - Amazon CloudWatch
   - Performance efficiency
+    - The ability to use computing resources efficiently to meet system requirements
+    - Amazon CloudWatch
   - Cost optimization
+    - Cost Explorer
   - Sustainability
+    - The ability to increase efficiency across all components of a workload by maximizing the benefits from the provisioned resources.
+    - Amazon EC2 Auto Scaling
 - Advantages of cloud computing
   - Trade upfront expense for variable expense.
   - Benefit from massive economies of scale.
@@ -172,6 +197,28 @@ markmap:
   - Increase speed and agility.
   - Stop spending money running and maintaining data centers.
   Go global in minutes.
+- AWS Design Principles
+  - Scalability
+  - Disposable Resources Instead of Fixed Servers
+  - Automation
+  - Loose Coupling
+  - Services, Not Servers
+  - Database
+  - Managing Increasing Volumes of Data
+  - Removing Single Points of Failure
+  - Optimize for Cost
+  - Caching
+  - Security
+- Cloud Architecture Best Practices
+  - Decouple your components 
+  - Think parallel
+  - Implement elasticity
+  - Design for failure
+- AWS Disaster Recovery
+  - Backup and Restore
+  - Pilot Light
+  - Warm Standby Solution
+  - Multi-Site
 
 ## Job Roles in the Cloud
 
