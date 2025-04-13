@@ -87,3 +87,32 @@ markmap:
   - Application
   - Data
 - Defender for Cloud
+
+## Management and governance
+
+- Cost management
+  - Pricing calculator. Estimated cost for provisioning resources in Azure
+  - TCO calculator. Compare the costs for running an on-premises infrastructure compared to an Azure Cloud infrastructure
+  - Cost Management
+    - Budget alerts
+    - Credit alerts
+    - Department spending quota alerts
+- Feature and tools for governance and compliance
+  - Microsoft Purview
+  - Azure Policies
+    - Azure Policy initiative is a way of grouping related policies together
+  - Resource locks. Prevent resources from being deleted or updated
+  - Microsoft Service Trust Portal
+- Azure Resource Manager (ARM) is the deployment and management service for Azure
+  - ARM templates
+  - Declarative syntax. Repeatable results. Orchestration. Modular files. Extensibility
+  - Bicep is a language that uses declarative syntax to deploy Azure resources
+- Monitoring tools
+  - Azure Advisor. Recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs
+  - Azure Status is a broad picture of the status of Azure globally.
+  - Service Health provides a narrower view of Azure services and regions.
+  - Resource Health is a tailored view of your actual Azure resources.
+  - Azure Monitor is a platform for collecting data on your resources, analyzing that data, visualizing the information
+  - Azure Log Analytics is the tool in the Azure portal where you’ll write and run log queries
+  - Azure Monitor Alerts are an automated way to stay informed when Azure Monitor detects a threshold being crossed. 
+  - Application Insights, an Azure Monitor feature, monitors your web applications.
