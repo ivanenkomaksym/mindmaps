@@ -33,3 +33,30 @@ markmap:
 - Considerations
   - Increased complexity as you're managing two distinct models
   - Potential for eventual consistency between the write and read models
+
+## Database Sharding / Partitioning
+
+- Scalability: Distributes data across multiple database servers
+- Performance: Queries can be directed to specific shards
+- Considerations
+  - Choosing the right sharding key is critical
+  - Cross-shard queries can be complex and less performant
+  - Operational complexity in managing a sharded database environment
+
+## Caching (Distributed Caching)
+
+- Performance: Stores frequently accessed data
+- Reduced Latency: Delivers data to users much faster
+- Considerations 
+  - Cache invalidation strategies are crucial to ensure users see up-to-date information 
+  - Choosing what to cache and for how long
+  - Using distributed caches like Redis or Memcached for scalability and fault tolerance
+
+## Load Balancing
+
+- Distributes incoming traffic across multiple instances of your application servers, database replicas, etc.
+- Prevents any single server from being overwhelmed.
+- Improves availability by routing traffic away from unhealthy instances.
+- Considerations 
+  - Session affinity (sticky sessions) might be needed for certain stateful interactions
+  - Sophisticated load balancing algorithms that can account for server load, geographic location, etc.
