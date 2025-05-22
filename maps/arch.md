@@ -71,6 +71,33 @@ markmap:
   - Cross-shard queries can be complex and less performant
   - Operational complexity in managing a sharded database environment
 
+## Transactions
+
+- 2PC Two-Phase Commits: a voting phase and a commit phase
+- Sagas
+  - Long lived transactions (LLTs): break down these LLTs into a sequence of transactions
+  - Orchestration pattern uses an orchestrator (sometimes called a mediator).
+    - Advantages
+      - Centralized workflow
+      - Error handling
+      - Recoverability
+    - Disadvantages
+      - Responsiveness: All communication must go through the mediator
+      - Fault tolerance: single point of failure for the workflow, which can be addressed with redundancy but adds more complexity.
+      - Scalability: doesn’t scale as well as choreography because it has more coordination points (the orchestrator)
+      - Service coupling: higher coupling between it and domain components
+  - Choreography pattern: each service participates with the others, similar to dance partners
+    - Advantages
+      - Responsiveness: has fewer single choke points
+      - Scalability: more independent scaling
+      - Fault tolerance: The lack of a single orchestrator allows an architect to enhance fault tolerance with the use of multiple instances.
+      - Service decoupling: No orchestrator means less coupling.
+    - Disadvantages
+      - Distributed workflow: No workflow owner makes error management and other boundary conditions more difficult
+      - State management: No centralized state holder hinders ongoing state management.
+      - Error handling: Error handling becomes more difficult without an orchestrator because the domain services must have more workflow knowledge
+      - Recoverability: more difficult without an orchestrator to attempt retries and other remediation efforts.
+
 ## Caching (Distributed Caching)
 
 - Performance: Stores frequently accessed data
