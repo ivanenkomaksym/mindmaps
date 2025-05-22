@@ -33,6 +33,34 @@ markmap:
 - Considerations
   - Increased complexity as you're managing two distinct models
   - Potential for eventual consistency between the write and read models
+  
+## Database
+
+- NoSQL
+  - Schema-on-read (the structure of the data is implicit, and only interpreted when the data is read)
+  - They prioritize scalability and availability over strict consistency.
+  - Basically Available, Soft state, Eventual consistency
+  - Horizontal scalability: well-suited for handling large amounts of data and high levels of traffic
+  - Distributed and high availability
+  - Types
+    - Document-based: MongoDB, CouchDB, Cloudant, DynamoDB
+    - Graph-based: Amazon Neptune, Neo4j
+    - Key-value-based: Memcached, Redis
+    - Column-based: Cassandra, HBase, Big Table
+  - When should NoSQL be used:
+    - When a huge amount of data needs to be stored and retrieved.
+    - The relationship between the data you store is not that important
+    - The data changes over time and is not structured.
+    - Support of Constraints and Joins is not required at the database level
+    - The data is growing continuously and you need to scale the database regularly to handle the data.
+- SQL
+  - Schema-on-write (schema is explicit and the database ensures all written data conforms to it)
+  - They prioritize reliability and strong consistency.
+  - Atomicity, Consistency, Isolation, Durability
+  - Common use cases:
+    - Banking (accurate balances).
+    - E-commerce (ensuring inventory integrity).
+    - Enterprise systems requiring strict guarantees.
 
 ## Database Sharding / Partitioning
 
@@ -60,3 +88,12 @@ markmap:
 - Considerations 
   - Session affinity (sticky sessions) might be needed for certain stateful interactions
   - Sophisticated load balancing algorithms that can account for server load, geographic location, etc.
+
+## Fault-Tolerant Systems
+
+- Replication: creating multiple copies of data or services
+- Redundancy: having additional components or systems that can take over in case of a failure
+- Load Balancing: distribute incoming network traffic across multiple servers
+- Failover: automatically switch to a standby system when the primary one fails
+- Graceful degradation: ensures that a system continues to operate at reduced functionality
+- Monitoring & Alerting: continuosly monitor the system's health and performance
