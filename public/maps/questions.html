@@ -1,26 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <title>Markmap</title>
 <style>
 * {
   margin: 0;
   padding: 0;
 }
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
 #mindmap {
   display: block;
   width: 100vw;
   height: 100vh;
 }
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
 </head>
 <body>
 <svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>((r) => {
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((r) => {
           setTimeout(r);
         })(() => {
   const { markmap, mm } = window;
@@ -36,6 +44,9 @@
                 (getOptions || markmap.deriveOptions)(jsonOptions),
                 root2
               );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
             })(() => window.markmap,null,{"content":"Frontend","children":[{"content":"General","children":[{"content":"SOLID","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"Design Patterns","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"CI/CD workflow","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"How to implement authentication? Authorization code flow? Machine-to-machine authentication?","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"How do you implement real-time updates?","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"Difference Between Local Storage, Session Storage And Cookies?","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"How to mitigate data over fetching? OData, GraphQL?","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"REST","children":[{"content":"REST vs GraphQL?","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Websockets?","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"DB","children":[{"content":"SQL and NoSQL databases? Advantages and disadvantages","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h2","lines":"17,18"}},{"content":"Microservices","children":[{"content":"Styles of Microservice Communication<br>\nhttps://learning.oreilly.com/library/view/building-microservices-2nd/9781492034018/ch04.html#idm45699545977232","children":[],"payload":{"tag":"li","lines":"23,26"}}],"payload":{"tag":"h2","lines":"21,22"}},{"content":"Cloud","children":[{"content":"When to use ECS, Lambda, or S3?","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h2","lines":"26,27"}},{"content":"NestJS","children":[{"content":"\n<p data-lines=\"32,34\">What&apos;s the difference between Interceptor vs Middleware vs Filter in Nest.js?<br>\nhttps://stackoverflow.com/questions/54863655/whats-the-difference-between-interceptor-vs-middleware-vs-filter-in-nest-js</p>","children":[],"payload":{"tag":"li","lines":"32,35"}},{"content":"\n<p data-lines=\"35,37\">Guards vs. Middlewares vs. Interceptors vs. Pipes<br>\nhttps://medium.com/@kevinpatelcse/guards-vs-middlewares-vs-interceptors-vs-pipes-in-nestjs-a-comprehensive-guide-37841a7873f1</p>","children":[],"payload":{"tag":"li","lines":"35,38"}},{"content":"\n<p data-lines=\"38,40\">Providers and Dependency Injection in Nest.js?<br>\nhttps://docs.nestjs.com/fundamentals/custom-providers</p>","children":[],"payload":{"tag":"li","lines":"38,41"}}],"payload":{"tag":"h2","lines":"30,31"}},{"content":"Angular","children":[{"content":"\n<p data-lines=\"43,45\">Can you explain the key differences between Angular and other frontend frameworks you&#x2019;ve worked with, such as React or Vue?<br>\nhttps://hygraph.com/blog/angular-vs-react</p>","children":[],"payload":{"tag":"li","lines":"43,46"}},{"content":"\n<p data-lines=\"46,48\">Angular State Management<br>\nhttps://dev.to/chintanonweb/angular-state-management-a-comparison-of-the-different-options-available-100e</p>","children":[],"payload":{"tag":"li","lines":"46,49"}}],"payload":{"tag":"h2","lines":"41,42"}},{"content":"Leadership &amp; Collaboration","children":[{"content":"How do you handle conflicts or disagreements within your team? Can you provide an example of a challenging situation you&#x2019;ve resolved?","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"Describe your experience with sprint planning?","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"Have you written and maintained style guidelines? How did you and the team follow them?","children":[],"payload":{"tag":"li","lines":"53,54"}}],"payload":{"tag":"h2","lines":"49,50"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
 </body>
 </html>
