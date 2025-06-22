@@ -124,3 +124,19 @@ markmap:
 - Failover: automatically switch to a standby system when the primary one fails
 - Graceful degradation: ensures that a system continues to operate at reduced functionality
 - Monitoring & Alerting: continuosly monitor the system's health and performance
+
+## Architecture Patterns
+
+- Model—View—Controller(MVC)
+  - UI(View) can be "smart" or "passive," often tightly coupled with Controller
+  - Many-to-one (one Controller can manage multiple Views)
+  - View can interact with Model directly, or through Controller
+  - Controller updates View, or View observes Model
+- Model—View—Presenter(MVP)
+  - UI(View) is passive, exposes an interface for the Presenter to update it
+  - One-to-one (one Presenter typically manages one View)
+  - Presenter updates View directly
+- Model — View — ViewModel (MVVM)
+  - UI(View) is passive, binds to ViewModel properties and commands
+  - One-to-many (one ViewModel can be used by multiple Views), but ViewModel doesn't know View
+  - Automatic via data binding (ViewModel updates reflected in View)
