@@ -140,3 +140,24 @@ markmap:
   - UI(View) is passive, binds to ViewModel properties and commands
   - One-to-many (one ViewModel can be used by multiple Views), but ViewModel doesn't know View
   - Automatic via data binding (ViewModel updates reflected in View)
+  
+## API Versioning
+
+- Versioning Strategies
+  - Additive change
+    - Things you can do:
+      - Add new optional fields
+      - Add new endpoints, and
+      - Make features optional with opt-in parameters
+    - Things you cannot do:
+      - Removing or renaming existing fields
+      - Changing data types or error codes
+      - Changing how endpoints fundamentally work
+  - Explicit versioning
+    - New version for a breaking change
+    - Maintain multiple versions
+- 3 ways of communicating versions:
+  - URL: https://api.example.com/v2/stocks
+  - Header: Api-Version: 2
+  - Query
+- Sunset HTTP header in API responses tells when a particular version or endpoint will no longer be available
