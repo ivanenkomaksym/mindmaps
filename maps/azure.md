@@ -75,9 +75,28 @@ markmap:
     - A resource group.
     - A single resource.
 - Zero Trust
-  - Verify explicitly
-  - Use least privilege access
-  - Assume breach
+  - Guiding principles
+    - Verify explicitly - Always authenticate and authorize based on the available data points
+    - Use least privilege access - Limit user access with just-in-time and just-enough access (JIT/JEA)
+    - Assume breach - Segment access by network, user, devices, and application.
+  - Six foundational pillars
+    - Identities may be users, services, or devices
+    - Devices create a large attack surface as data flows from devices to on-premises workloads and the cloud
+    - Applications are the way that data is consumed.
+    - Data should be classified, labeled, and encrypted based on its attributes.
+    - Infrastructure, whether on-premises or cloud based, represents a threat vector.
+    - Networks should be segmented, including deeper in-network micro segmentation.
+- Encryption
+  - Data at rest - stored on a physical device
+  - Data in transit - HTTPS
+  - Data in use - securing data in RAM or CPU
+- Governance, risk, and compliance
+  - Governance is the system of rules, practices, and processes an organization uses to direct and control its activities. 
+  - Risk management is the process of identifying, assessing, and responding to threats or events that can impact company or customer objectives. 
+  - Compliance refers to the country/region, state, or federal laws or even multi-national regulations that an organization must follow.
+    - Data residency - govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally.
+    - Data sovereignty - data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed. 
+    - Data privacy - Providing notice and being transparent about the collection, processing, use, and sharing of personal data are fundamental principles of privacy laws and regulations.
 - Defense-in-depth
   - Physical security
   - Identity & Access
