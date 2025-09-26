@@ -125,6 +125,39 @@ markmap:
 - Graceful degradation: ensures that a system continues to operate at reduced functionality
 - Monitoring & Alerting: continuosly monitor the system's health and performance
 
+## BCDR Business Continuity and Disaster Recovery
+
+- Business continuity planning:
+  - Risk identification: network issues, hardware failures, human error, region outage
+  - Risk classification
+  - Risk mitigation: using redundancy, replication, failover, and backups
+- Infrastructure risks: network issue, machine reboot, hadrware failure, datacenter outage, region outage
+- Security, performance or operational risks: data loss or corruption, software bug, failed deployment, DoS, rouge admin
+- Risk classification
+  - Common risks are planned and expected: brief network outages, equipment restarts due to patches
+  - Uncommon risks are unforeseeable events: natural disaster or major network attack
+- Risk mitigation
+  - Technology-based risk controls: Redundancy, Data replication, Failover, Backups
+  - Human-based risk mitigation
+    - Triggering a response playbook
+    - Falling back to manual operations
+    - Training and cultural changes
+- High availability design elements
+  - Fault tolerance - continue operating, in some defined capacity, in the event of a failure
+  - Redundancy - duplicating instances or data to increase the reliability of the workload
+  - Scalability and elasticity - abilities of a system to handle increased load by adding and removing resources (scalability), and to do so quickly as your requirements change (elasticity)
+  - Zero-downtime deployment
+  - Automated testing
+  - Monitoring and alerting
+- Disaster recovery
+  - Recovery Point Objective (RPO) is the maximum duration of acceptable data loss in the event of a disaster
+  - Recovery Time Objective (RTO) is the maximum duration of acceptable downtime in the event of a disaste
+  - Disaster recovery plans
+    - Failover and failback - provisioning a secondary deployment in another location
+    - Backups
+    - Automated deployments (IaC)
+    - Testing and drills
+
 ## Architecture Patterns
 
 - Model—View—Controller(MVC)
