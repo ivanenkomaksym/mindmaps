@@ -73,7 +73,9 @@ markmap:
 
 ## Transactions
 
-- 2PC Two-Phase Commits: a voting phase and a commit phase
+- 2PC Two-Phase Commits: a voting phase and a commit phase. Ensure all nodes in a distributed system either commit or roll back a transaction.
+  - Preparation Phase
+  - Commit Phase
 - Sagas
   - Long lived transactions (LLTs): break down these LLTs into a sequence of transactions
   - Orchestration pattern uses an orchestrator (sometimes called a mediator).
@@ -97,6 +99,19 @@ markmap:
       - State management: No centralized state holder hinders ongoing state management.
       - Error handling: Error handling becomes more difficult without an orchestrator because the domain services must have more workflow knowledge
       - Recoverability: more difficult without an orchestrator to attempt retries and other remediation efforts.
+- Difference Between Two-Phase Commit and Saga Pattern
+  - Atomicity vs. Eventual Consistency
+    - 2PC ensures strong consistency by maintaining atomicity across distributed transactions
+    - Saga Pattern ensures eventual consistency rather than strong consistency
+  - Transaction Duration
+    - 2PC protocol is best suited for short-lived transactions
+    - Saga Pattern is more suitable for long-lived transactions
+  - Complexity
+    - 2PC simple - it relies on a single atomic operation.
+    - Sagas are more complex to implement because they require defining compensating transactions and managing partial failures.
+  - Scalability
+    - 2PC is less scalable due to the need for coordination and the potential locks to be held across distributed nodes
+    - Saga Pattern is more scalable because each service manages its transactions independently.
 
 ## Caching (Distributed Caching)
 
