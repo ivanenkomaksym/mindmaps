@@ -14,3 +14,24 @@ markmap:
   - Contrast - He was tired, yet he kept reading.
   - Effect/Result - She studied hard, so she passed.
   - Cause/Reason - He wore a jacket for it was cold.
+- The Product Pitch Components
+  - Structure
+    - The problem
+    - Your solution
+    - How it Works
+    - Competition/How are they solving it now
+    - Pricing (if appropriate)
+    - Current status
+    - Benefits/Testimonial(s)
+    - Team
+  - Tips
+    - FOMO - Fear of missing out
+    - Focus on audience's motivation
+    - Hero's journey
+      - 1. Current situation
+      - 2. Problems of existing problems don't yet address
+      - 3. Resolution
+    - Rule of Three
+      - Tell thruthful and meaningful (mom example)
+      - Let you know how much that meant to me
+      - Respectful manner to propose
