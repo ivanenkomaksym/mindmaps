@@ -33,10 +33,27 @@ markmap:
 - Considerations
   - Increased complexity as you're managing two distinct models
   - Potential for eventual consistency between the write and read models
+
+## Event Sourcing
+
+- Instead of storing just the current state of the data, store the full series of actions taken on an object in an append-only store.
+- Benefits
+  - Makes write operations much faster as there is no read, update, and write required
+  - Provide an audit log as a by-product
+  - Support temporal queries and achieve time-travel (the domain state at a point in the past)
+  - It’s a natural fit for designing loosely coupled components i
+- Drawbacks
+  - A learning curve associated and a shift in mindset required
+  - Rather difficult to handle typical queries
+  - it’s more appropriate for the event-based model 
   
 ## Database
 
 - NoSQL
+  - BASE
+    - Basically Available: The system guarantees availability of data, even in the face of some failures.
+    - Soft state: The system state may change over time, even without inputs (due to eventual consistency).
+    - Eventual consistency: Data will eventually reach consistency across nodes, but not necessarily immediately.
   - Schema-on-read (the structure of the data is implicit, and only interpreted when the data is read)
   - They prioritize scalability and availability over strict consistency.
   - Basically Available, Soft state, Eventual consistency
@@ -54,6 +71,11 @@ markmap:
     - Support of Constraints and Joins is not required at the database level
     - The data is growing continuously and you need to scale the database regularly to handle the data.
 - SQL
+  - ACID
+    - Atomicity: all complete or all fail
+    - Consistency: When changes are made to our database, we ensure it is left in a valid, consistent state
+    - Isolation: Allows multiple transactions to operate at the same time without interfering
+    - Durability: Makes sure that once a transaction has been completed, we are confident the data won’t get lost in the event of some system failure
   - Schema-on-write (schema is explicit and the database ensures all written data conforms to it)
   - They prioritize reliability and strong consistency.
   - Atomicity, Consistency, Isolation, Durability
