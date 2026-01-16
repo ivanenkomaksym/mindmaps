@@ -210,6 +210,15 @@ markmap:
   - UI(View) is passive, binds to ViewModel properties and commands
   - One-to-many (one ViewModel can be used by multiple Views), but ViewModel doesn't know View
   - Automatic via data binding (ViewModel updates reflected in View)
+- Circuit Breakers
+  - After a certain number of requests to the downstream resource have failed (due either to error or to a time-out), the circuit breaker is blown
+  - All further requests that go through that circuit breaker fail fast while the breaker is in its blown (open) state
+  - If it gets enough healthy responses it resets the circuit breaker.
+- Retries with exponential backoff
+  - Retries an operation, with an exponentially increasing wait time, up to a maximum retry count has been reached
+  - Cloud resources might intermittently be unavailable for more than a few seconds for any reason
+    - Orchestrator might be moving a container to another node in a cluster for load balancing
+    - database like SQL Azure, where a database can be moved to another server for load balancing
   
 ## API Versioning
 
@@ -231,3 +240,10 @@ markmap:
   - Header: Api-Version: 2
   - Query
 - Sunset HTTP header in API responses tells when a particular version or endpoint will no longer be available
+
+## Domain-Driven Design
+  - Bounded Context
+    - A specific area within a problem domain where a particular model or language is consistently used.
+    - Sets clear boundaries for terms that may have different meanings in different parts of the system.
+    - Allows teams to develop models specific to each context, reducing confusion and inconsistency.
+Breaks down large, complex domains into smaller, more manageable parts.
