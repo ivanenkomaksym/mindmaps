@@ -149,6 +149,37 @@ markmap:
   - Cache invalidation strategies are crucial to ensure users see up-to-date information 
   - Choosing what to cache and for how long
   - Using distributed caches like Redis or Memcached for scalability and fault tolerance
+- Cache types
+  - In-memory caching
+    - Useful for applications that require high-speed access to data, such as web servers and databases
+    - Volatile and the data stored in the RAM may be lost if the system is shut down or restarted
+  - Distributed caching
+    - Storing data across multiple servers or nodes in a network
+    - Useful for applications that require high availability and scalability
+    - Managing a distributed caching system can be complex, and ensuring consistency across multiple nodes can be challenging
+  - Client-side caching
+    - Storing data on the client’s device, such as a web browser
+    - Useful for web applications that require frequent access to static resources, such as images and JavaScript files
+    - Can lead to issues with stale data, as the cached data may not always be up-to-date
+- Cache Strategies
+  - Cache-Aside
+    - When data is requested, the application checks the cache first. If the data is not in the cache, it is retrieved from the database and stored in the cache for future use
+  - Write-Through
+    - Data is written to both the cache and the database at the same time
+    - When data is updated, it is written to the cache and the database simultaneously. This ensures that the cache always contains up-to-date data, but it can slow down write operations.
+  - Write-Behind
+    - Data is written to the cache first and then to the database at a later time
+    - This allows write operations to be faster, but it can lead to data inconsistencies if the cache is not properly managed.
+  - Read-Through
+    - Cache is used as the primary data source. When data is requested, the cache is checked first. If the data is not in the cache, it is retrieved from the database and stored in the cache for future use.
+- Cache Effectiveness
+  - Cache hit rate - percentage of requests that are served from the cache instead of the backend data store
+  - Cache eviction rate - percentage of cached items that are removed from the cache due to expiration or replacement
+  - Cache expiration time - A longer cache expiration time can improve the cache hit rate but increase the risk of stale data. A shorter cache expiration time can reduce the risk of stale data but decrease the cache hit rate.
+- Real Life E-commerce website
+  - 1. In-memory caching - store frequently accessed product information, such as the price, description, and image of the shoes. This information is stored in the RAM of the web server, which allows for fast access and retrieval.
+  - 2. Use a distributed caching system to improve the scalability and availability of the website. They choose a distributed cache that can be accessed by multiple web servers, and configure it to automatically synchronize the data between nodes.
+  - 3. Client-side caching - use browser caching to store static resources, such as CSS, JavaScript, and images, on the user’s computer.
 
 ## Load Balancing
 
