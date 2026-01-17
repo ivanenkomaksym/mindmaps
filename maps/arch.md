@@ -102,6 +102,37 @@ markmap:
     - Banking (accurate balances).
     - E-commerce (ensuring inventory integrity).
     - Enterprise systems requiring strict guarantees.
+- B-Tree, or Balanced Tree
+  - Is a self-balancing tree data structure that maintains sorted data and allows for efficient insertion, deletion, and search operations
+  - Each node can contain more than one key and can have more than two children. It is a generalized form of the binary search tree.
+  - All leaves are at the same level - this is what makes the tree 'balanced'.
+- Types of index 
+  - Clustered Index (Primary Key)
+    - Determines the physical order of data in a table.
+    - Each table can have only one clustered index.
+    - When you create a clustered index on a table, the data rows are rearranged in the order of the indexed column(s).
+    - records are stored in the leaf nodes.
+  - Non Clustered Index (or Secondary Index)
+    - Doesn’t change the physical order of data in a table.
+    - Table can have multiple non-clustered indexes
+    - Stored in a separate data structure that includes a copy of the indexed column(s) along with a pointer to the its address in the storage
+  - When adding a new record, database engine
+    - Retrieving the relevant index pages
+    - Proceeds to restructure the B+ tree to accommodate the new record
+    - Once the restructuring is complete, the engine saves the updated pages and writes them back to the storage, ensuring that the B+ tree remains in its optimized state.
+  - Indexes types
+    - B+ Tree Indexes
+      -  is one of the most common index structures
+      -  It’s a self-balancing tree structure that allows for efficient data retrieval, insertion, and deletion
+   -  Hash Indexes
+      -  use a hash function to map keys to locations in the index
+      -  very fast for exact-match queries but are less efficient for range queries.
+      -  are typically used in memory-based databases or as a secondary index in some databases
+   -  Bitmap Indexes
+      -  Typically used for low-cardinality columns, which are columns with a relatively small number of distinct values.
+      -  Excellent for read-heavy workloads and complex queries, they can be less efficient for write operations.
+   -  Sparse Indexes
+      -  Stores information about only a subset of the rows in a table, rather than every row
 
 ## Database Sharding / Partitioning
 
