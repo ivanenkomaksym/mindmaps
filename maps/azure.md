@@ -135,3 +135,40 @@ markmap:
   - Azure Log Analytics is the tool in the Azure portal where you’ll write and run log queries
   - Azure Monitor Alerts are an automated way to stay informed when Azure Monitor detects a threshold being crossed. 
   - Application Insights, an Azure Monitor feature, monitors your web applications.
+
+## IoT
+
+- Typicaly workflow
+  - Ingest 1
+    - IoT Devices
+    - Logs, Files
+    - Customer Data, Financial transactions
+    - Weather data
+    - Business Apps
+  - Ingest 2
+    - Event Hubs
+    - Azure blob storage
+    - IoT Hub
+  - Analyze
+    - Azure Stream Analytics. Continuous Intelligence/Real-time analytics
+  - Deliver
+    - Alerts and actions
+      - Event Hubs
+      - Service Bus
+      - Azure Functions
+    - Dynamic Dashboarding
+      - Power BI
+    - Data Warehousing
+      - Azure Synapse
+      - Analytics
+    - Storage/Archival
+      - SQL DB
+      - Azure Data Lake Gen 1 & Gen 2
+      - Cosmos DB
+      - Blob storage
+- IoT Edge
+  - a containerized runtime that collects sensor data and performs local logic
+- Azure Stream Analytics
+  - reads from the Event Hub
+- Azure Data Explorer
+  - Best-in-class performance for telemetry; handles massive write-throughput and complex queries simultaneously.
