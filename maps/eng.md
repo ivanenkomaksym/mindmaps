@@ -35,3 +35,23 @@ markmap:
       - Tell thruthful and meaningful (mom example)
       - Let you know how much that meant to me
       - Respectful manner to propose
+- Articles
+  - Have you got an idea about how we can solve the problem?
+  - Jake took out a bottle of beer from the fridge
+- Zero Article
+  - Uncountable and Plural Nouns in General Statements
+    - Water is essential for life.
+    - Dogs are loyal animals.
+    - Most children like sweets
+  - Proper Nouns, including names of people, countries, cities, and languages
+    - I live in Japan. 
+    - She speaks French.
+  - Meals, Transport, and Times
+    - We have breakfast at 8 AM. 
+    - She goes to work by bus.
+  - Abstract nouns, such as love, happiness, and freedom
+    - Love is a universal emotion
+    - Freedom is important
+    - Two countries reached peace
+  - Exceptions and Special Cases
+    - "the Netherlands" and "the United States" 
