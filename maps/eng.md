@@ -55,3 +55,16 @@ markmap:
     - Two countries reached peace
   - Exceptions and Special Cases
     - "the Netherlands" and "the United States" 
+- Space bodies
+  - Zero article
+    - Planets and Moons
+      - Proper names like Mars, Venus, Jupiter, Pluto, or Europa
+    - Space Concepts & Locations
+      - "in space", "deep space", "space debris"
+    - Astronautical Operations
+      - orbit, reentry, launch
+  - The
+    - When referring specifically to our, singular Sun, Moon, or Earth (e.g., "The sun rises," "The Earth orbits...")
+    - "The Sun is a star", but "Mars is often called the Red Planet"
+    - "The astronauts landed on the Moon", but "Venus is very bright tonight"
+    - "Space is infinite", but "He bought a rocket model"
