@@ -336,3 +336,14 @@ Breaks down large, complex domains into smaller, more manageable parts.
   - High Overhead: Verbose text headers (800+ bytes). If you are uploading an image, a firmware file, or a large log file, the overhead of HTTP headers becomes negligible
   - Unidirectional: Server cannot "push" to device easily.
   - Reliant on TCP/Application logic.
+
+## Logging
+- Wide events
+  - Instead of logging what your code is doing, log what happened to this request: a structured record of business events.
+  - Instead of: "The user said checkout failed. Let me grep through 50 services and hope I find something."
+  - You get: "Show me all checkout failures for premium users in the last hour where the new checkout flow was enabled, grouped by error code."
+- Tail Sampling
+  - Always keep errors. 100% of 500s, exceptions, and failures get stored.
+  - Always keep slow requests. Anything above your p99 latency threshold.
+  - Always keep specific users. VIP customers, internal testing accounts, flagged sessions.
+  - Randomly sample the rest. Happy, fast requests? Keep 1-5%.
