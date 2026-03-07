@@ -168,7 +168,10 @@ markmap:
       - Blob storage
 - IoT Edge
   - a containerized runtime that collects sensor data and performs local logic
+- Azure Event Hubs
+  - Scalable event processing service that ingests and processes large volumes of events and data
+  - low latency and high reliabilit
 - Azure Stream Analytics
-  - reads from the Event Hub
+  - Reads from the Event Hub
 - Azure Data Explorer
   - Best-in-class performance for telemetry; handles massive write-throughput and complex queries simultaneously.
