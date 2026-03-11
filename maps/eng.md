@@ -55,6 +55,9 @@ markmap:
     - Two countries reached peace
   - Exceptions and Special Cases
     - "the Netherlands" and "the United States" 
+    - The usuful machines
+    - Someone wrote a book about the American presidents
+    - We usually go by train, but today we're taking the bus
 - Space bodies
   - Zero article
     - Planets and Moons
