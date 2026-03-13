@@ -71,3 +71,12 @@ markmap:
     - "The Sun is a star", but "Mars is often called the Red Planet"
     - "The astronauts landed on the Moon", but "Venus is very bright tonight"
     - "Space is infinite", but "He bought a rocket model"
+- Geographical names
+  - 'no article'
+    - Lakes, mountains, contitents, most countries, states, regions, cities, towns, villages, islands
+  - 'the'
+    - Rivers: The River Nile
+    - Mountain ranges: in the Alps
+    - Deserts: across the Sahara
+    - Oceans and seas: the Mediterranean
+    - Groups of islands: the Canary islands
