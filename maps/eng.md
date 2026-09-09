@@ -87,3 +87,11 @@ markmap:
   - At 3:04, officers... arrived
   - It has the long-term impact on (smth)...
   - Without a proper regulation, ...
+- Inversion
+  - Never before have I been asked to accept a bribe.
+  - Hardly had he left the house when the storm broke.
+  - No sooner had he left the house than the storm broke.
+  - On no account must this switch be touched.
+  - Rarely does she have any money to spare.
+  - Hardly does he speak to anyone.
+  - Hardly had they started playing tennis when it began to rain.
