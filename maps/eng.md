@@ -95,3 +95,19 @@ markmap:
   - Rarely does she have any money to spare.
   - Hardly does he speak to anyone.
   - Hardly had they started playing tennis when it began to rain.
+- Phrasal verbs
+  - get across
+    - to be or make made understood, to convince
+    - to navigate
+  - to cut back on
+    - remove something
+  - put together
+    - nicely dressed
+  - pick on
+    - to speak to or treat (a person) angrily or critically
+  - to spit out
+    - to say something quickly and angrily
+  - patch up
+    - to repair something, especially in a simple and temporary way
+  - flesh out
+    - to give smth a physical body
