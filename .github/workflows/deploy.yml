@@ -9,6 +9,7 @@ jobs:
   deploy:
     permissions:
       contents: write
+      deployments: write
     runs-on: ubuntu-latest
 
     steps:
@@ -55,10 +56,9 @@ jobs:
           git push
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "mindmaps"
-          directory: "public"
-          branch: "main"
+          command: pages deploy public --project-name=mindmaps
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
